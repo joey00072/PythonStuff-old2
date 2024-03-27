@@ -22,10 +22,10 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['var(--font-space-grotesk)', ...fontFamily.sans],
+        sans: ['Infer', ...fontFamily.sans],
       },
       colors: {
-        primary: colors.pink,
+        primary: colors.sky,
         gray: colors.gray,
       },
       typography: ({ theme }) => ({
@@ -46,7 +46,7 @@ module.exports = {
               fontWeight: '600',
             },
             code: {
-              color: theme('colors.indigo.500'),
+              color: theme('colors.pink.500'),
             },
           },
         },

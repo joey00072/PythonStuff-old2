@@ -115,7 +115,9 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Layout content={mainContent} authorDetails={authorDetails} next={next} prev={prev}>
-        <MDXLayoutRenderer code={post.body.code} components={components} toc={post.toc} />
+        <div className="text-l">
+          <MDXLayoutRenderer code={post.body.code} components={components} toc={post.toc} />
+        </div>
       </Layout>
     </>
   )
